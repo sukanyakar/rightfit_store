@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shoppingcart</title>
+    <link rel="stylesheet" href="ecomstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/lg.png" alt="logo" width="300px">
+        </div>
+          <nav>
+            <ul id="MenuItems" >
+              <li><a href="ecomm.html">Home</a></li>
+              <li><a href="productss.html">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            <!-- TODo: 22:20 -->
+          </ul>
+        </nav>
+        <a href="cart.html" ><img src="images/cart.png" alt="" width="30px" height="30px"  /></a>
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()"  />
+      </div>
+    </div>
+
+    <!-- Cart Items Details -->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/product-30.webp" alt="" />
+              <div>
+                <h4><b>Nike</b></h4>
+            <h5>Women Solid gym Slim fit(black) </h5>
+                <small>Price: Rs.1599</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="nunber" value="1" /></td>
+          <td>Rs.1599</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/product-22.jpg" alt="" />
+              <div>
+                <h4><b>Reebok Men Wear</b></h4>
+            <h5>Men Regular Fit Shorts</h5>
+                <small>Price: Rs.699</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>Rs.699</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/product-28.jpg" alt="" />
+              <div>
+                <h4><b>HRX by Hrithik Roshan</b></h4>
+            <h5>Training Seamless T-shirt(women)</h5>
+                <small>Price: Rs.899</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>Rs.899</td>
+        </tr>
+
+        
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>Rs.3127</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>Rs.53</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>Rs.3180</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Rightfit App</h3>
+          <p>Download for Android and ios mobile phones</p>
+           <div class="app-logo">
+              <img src="images/play-store.png" alt="">
+              <img src="images/app-store.png" alt="">
+           </div>
+        </div>
+        <div class="footer-col-2">
+         <img src="images/loog.png">
+         <p>For your benefits and comfort of sports accessible <br>we are here always</p>
+       </div>
+       <div class="footer-col-3">
+         <h3>useful links</h3>
+         <ul>
+             <li>Coupons</li>
+             <li>Blog post</li>
+             <li>Return policy</li>
+             <li>Join affliate</li>
+         </ul>
+       </div>
+       <div class="footer-col-4">
+         <h3>Follow us</h3>
+         <ul>
+             <li>Facebook</li>
+             <li>Twitter</li>
+             <li>Instagram</li>
+             <li>Youtube</li>
+         </ul>
+       </div>
+       <p class="copyright">Copyright reserved-Rightfit Store</p>
+     </div>
+     </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
